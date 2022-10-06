@@ -1,0 +1,89 @@
+Script started on Thu Mar 14 00:23:49 2019
+[?1034hbash-3.2$ gcc a.c
+bash-3.2$ ./a.out
+input: O
+IDA: 100
+source O
+O->S f=g+h 402=151+251
+O->Z f=g+h 441=71+370
+O->S is the best path with a 402 evaluation
+S->A f=g+h 654=291+363
+S->F f=g+h 425=250+175
+S->O f=g+h 679=302+377
+S->R f=g+h 422=231+191
+O->S->R is the best path with a 422 evaluation
+R->C f=g+h 535=377+158
+R->P f=g+h 337=328+9
+R->S f=g+h 562=311+251
+O->S->R->P is the best path with a 337 evaluation
+P->B f=g+h 429=429+0
+P->C f=g+h 624=466+158
+P->R f=g+h 616=425+191
+O->S->F is the best path with a 425 evaluation
+F->B f=g+h 461=461+0
+F->S f=g+h 600=349+251
+O->S->R->P->B is the best path with a 429 evaluation
+429 is distance to bucharest
+end program
+bash-3.2$ ./a.out
+input: A
+IDA: 2
+source A
+A->S f=g+h 391=140+251
+A->T f=g+h 443=118+325
+A->Z f=g+h 445=75+370
+A->S is the best path with a 391 evaluation
+S->A f=g+h 643=280+363
+S->F f=g+h 414=239+175
+S->O f=g+h 668=291+377
+S->R f=g+h 411=220+191
+A->S->R is the best path with a 411 evaluation
+ida limit
+bash-3.2$ ./a.out
+input: B
+IDA: 1
+
+You are starting and ending at Bucharest. Total travel distance=0.
+
+bash-3.2$ ./a.out
+input: V
+IDA: 5
+source V
+V->I f=g+h 315=92+223
+V->U f=g+h 221=142+79
+V->U is the best path with a 221 evaluation
+U->B f=g+h 177=177+0
+U->H f=g+h 389=240+149
+U->V f=g+h 481=284+197
+V->U->B is the best path with a 177 evaluation
+177 is distance to bucharest
+end program
+bash-3.2$ ./a.out
+input: Z
+IDA: 3
+source Z
+Z->A f=g+h 438=75+363
+Z->O f=g+h 448=71+377
+Z->A is the best path with a 438 evaluation
+A->S f=g+h 466=215+251
+A->T f=g+h 518=193+325
+A->Z f=g+h 520=150+370
+Z->O is the best path with a 448 evaluation
+O->S f=g+h 473=222+251
+O->Z f=g+h 512=142+370
+Z->A->S is the best path with a 466 evaluation
+S->A f=g+h 718=355+363
+S->F f=g+h 489=314+175
+S->O f=g+h 743=366+377
+S->R f=g+h 486=295+191
+Z->O->S is the best path with a 473 evaluation
+S->A f=g+h 725=362+363
+S->F f=g+h 496=321+175
+S->O f=g+h 750=373+377
+S->R f=g+h 493=302+191
+Z->A->S->R is the best path with a 486 evaluation
+ida limit
+bash-3.2$ exit
+exit
+
+Script done on Thu Mar 14 00:24:49 2019
